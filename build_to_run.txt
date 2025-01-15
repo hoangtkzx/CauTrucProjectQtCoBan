@@ -1,0 +1,24 @@
+[] Xoa thu muc build truoc neu co
+$ rm -rf build
+
+[] Tao thu muc build moi
+$ mkdir build && cd build
+
+[] Cau hinh Qt
+Cấu hình CMake:
+
+* Qt5:
+
+$ cmake .. -DCMAKE_PREFIX_PATH=/usr/lib/x86_64-linux-gnu
+
+* Qt6:
+
+$ cmake .. -DCMAKE_PREFIX_PATH=/path/to/Qt6/installation
+
+[] build du an
+$ cmake --build
+
+-> Se tao file thuc thi trong thu muc /build
+
+[] Chay file
+./<file thuc thi>
